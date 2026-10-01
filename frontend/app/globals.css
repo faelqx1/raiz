@@ -1,0 +1,113 @@
+:root {
+  --verde: #2e7d32;
+  --verde-escuro: #1b5e20;
+  --verde-claro: #e8f5e9;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #e8f5e9 0, #f7faf7 320px) no-repeat, #f7faf7;
+}
+
+/* Barra de navegação */
+.navbar-raiz {
+  background: linear-gradient(90deg, var(--verde-escuro), var(--verde));
+}
+.navbar-raiz .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  margin-left: 0.25rem;
+  transition: background 0.2s;
+}
+.navbar-raiz .nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+.navbar-raiz .nav-link.active {
+  background: #fff;
+  color: var(--verde-escuro);
+}
+
+/* Títulos */
+h1.h3 {
+  font-weight: 700;
+  color: var(--verde-escuro);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem !important;
+  border-bottom: 3px solid var(--verde-claro);
+}
+
+/* Cards */
+.card {
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(27, 94, 32, 0.08) !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(27, 94, 32, 0.15) !important;
+}
+
+/* Faixa colorida nos 4 indicadores do dashboard */
+.col-lg-3:nth-child(1) > .card { border-top: 4px solid #2e7d32; }
+.col-lg-3:nth-child(2) > .card { border-top: 4px solid #dc3545; }
+.col-lg-3:nth-child(3) > .card { border-top: 4px solid #0d6efd; }
+.col-lg-3:nth-child(4) > .card { border-top: 4px solid #6f42c1; }
+
+/* Botões */
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+}
+.btn-success {
+  background: var(--verde);
+  border-color: var(--verde);
+}
+.btn-success:hover {
+  background: var(--verde-escuro);
+  border-color: var(--verde-escuro);
+}
+
+/* Formulários */
+.form-control,
+.form-select {
+  border-radius: 10px;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--verde);
+  box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.2);
+}
+
+/* Tabelas */
+.table thead th {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6c757d;
+  border-bottom: 2px solid var(--verde-claro);
+}
+.table-hover tbody tr:hover {
+  background: var(--verde-claro);
+}
+
+/* Barras de progresso */
+.progress {
+  border-radius: 999px;
+  background: var(--verde-claro);
+}
+.progress-bar {
+  border-radius: 999px;
+}
+
+.banner-raiz {
+  color: #fff;
+  padding: 2.5rem 1.5rem;
+  border-radius: 14px;
+  background:
+    linear-gradient(90deg, rgba(27, 94, 32, 0.85), rgba(27, 94, 32, 0.35)),
+    url("/campo.jpg") center / cover,
+    var(--verde);
+}

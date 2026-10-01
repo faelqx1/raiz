@@ -37,7 +37,7 @@ npm run seed
 npm start
 ```
 
-- `npm run seed` recria as tabelas com dados de exemplo (opcional; o `raiz.db` já acompanha o projeto).
+- `npm run seed` limpa os dados e insere os dados de exemplo (opcional; o `raiz.db` já acompanha o projeto).
 - A API fica em `http://localhost:3001`.
 
 ### 3. Front-end (porta 3000)
